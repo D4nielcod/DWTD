@@ -36,17 +36,20 @@ lessBtn.addEventListener("click", function () {
 goToLiveProjectCard.addEventListener("click", function () {
   hiddenPart.style.display = "block";
   shownPart.style.display = "none";
+  moreBtn.style.display = "none";
   lessBtn.style.display = "flex";
 });
 goToCaseStudyCard.addEventListener("click", function () {
   hiddenPart.style.display = "block";
   shownPart.style.display = "none";
   lessBtn.style.display = "flex";
+  moreBtn.style.display = "none";
 });
 goToDesignCard.addEventListener("click", function () {
   hiddenPart.style.display = "block";
   shownPart.style.display = "none";
   lessBtn.style.display = "flex";
+  moreBtn.style.display = "none";
 });
 
 // SLIDER ONE
