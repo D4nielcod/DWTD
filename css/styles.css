@@ -76,6 +76,10 @@ a {
     bottom: 20px;
     right: 20px;
   }
+
+  #top-btn a:hover {
+    background: url("../images/home/icon-goToTop.png") center/cover no-repeat;
+  }
 }
 
 /* Navigation Bar */
@@ -823,17 +827,17 @@ a {
 
 @media screen and (max-width: 1000px) {
   .section-two {
-    padding: 30px 0px;
+    padding: 30px 20px;
   }
 
   .sect2-heading {
-    padding: 0px 20px;
+    padding: 0px;
   }
 
   .sect2-container {
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    padding: 30px 20px;
+    padding: 0px;
   }
 
   .sect2-card {
@@ -865,17 +869,14 @@ a {
     padding: 20px 15px;
   }
 
-  .sect2-btn {
-    width: 110px;
-  }
-
+  .sect2-btn1,
   .sect2-btn2 {
-    width: 130px;
+    width: 100%;
   }
 
   /* Hidden part */
   .sect2-box {
-    padding: 30px 20px;
+    padding: 30px 0px;
   }
 
   .sect2-hidden-header {
@@ -917,15 +918,8 @@ a {
 
   .sect2-arrow {
     bottom: 65px;
-    left: 160px;
-  }
-
-  .sect2-arrow2 {
-    left: 220px;
-  }
-
-  .sect2-arrow3 {
-    left: 170px;
+    left: auto;
+    right: 20px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -959,7 +953,7 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 25px 10px;
+  padding: 25px 20px;
 }
 
 .sect3-mid-card {
@@ -986,9 +980,9 @@ a {
 }
 
 .sect3-txtbox {
-  margin-left: 10px;
+  margin-left: 20px;
   text-align: left;
-  width: calc(100% - 48px);
+  width: calc(100% - 68px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -1046,7 +1040,7 @@ a {
 
 .sect4-arrow {
   align-items: center;
-  bottom: 14px;
+  bottom: 30px;
   display: flex;
   position: absolute;
   right: 20px;
@@ -1125,11 +1119,12 @@ a {
 }
 
 .sect4-nambox {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
 .sect4-nambox h4 {
   font-size: 14px;
+  margin-bottom: 6px;
 }
 
 .sect4-nambox p {
@@ -1139,17 +1134,42 @@ a {
 
 @media screen and (max-width: 600px) {
   .sect4-arrow {
-    bottom: 14px;
-    right: 20px;
+    align-items: center;
+    bottom: 50%;
+    display: flex;
+    justify-content: space-between;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 100%;
   }
 
   .sect4-icon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
   }
 
   .icon-arrowLeft4 {
-    margin-right: 8px;
+    background: url("../images/home/icon-arrowLeftMobile.png") center/cover
+      no-repeat;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    margin-right: 0px;
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  .icon-arrowRight4 {
+    background: url("../images/home/icon-arrowRightMobile.png") center/cover
+      no-repeat;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  .icon-arrowLeft4:hover,
+  .icon-arrowRight4:hover {
+    opacity: 1;
   }
 
   .sect4-box {
